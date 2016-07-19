@@ -65,12 +65,6 @@
                     <li><a class="toctree-l4" href="#instructions">Instructions</a></li>
                 
             
-                <li class="toctree-l3"><a href="#i2cset-f-y-0-0x24-6-0xb3-b">i2cset -f -y 0 0X24 6 0Xb3 b</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#i2cset-f-y-0-0x24-5-0xa0-b">i2cset -f -y 0 0X24 5 0Xa0 b</a></li>
-                
-            
             </ul>
         
     </li>
@@ -113,19 +107,19 @@
 <h2 id="instructions">Instructions</h2>
 <p>A 2-pin Connector interface is provided at battery test points TP6 and TP8, with a 10K thermistor R31 mounted on PCB to simulate the thermistor circuit for battery charging.</p>
 <p>Following is a diagram explaining the battery interfaces on VIBE2 :</p>
-<p><img alt="bat" src="./bat.jpg" /></p>
+<p><img alt="bat" src="./img\bat.jpg" /></p>
 <p>Follow the given steps to change the battery charging conditions :</p>
 <pre><code>Connect a 3.7V Li-Po battery of sufficient capacity with its VBAT to TP6 and GND to TP8.
 
 Issue the following commands in console :
 </code></pre>
 <p>a) Change battery charging range to 0-60 degree C</p>
-<h1 id="i2cset-f-y-0-0x24-6-0xb3-b">i2cset -f -y 0 0X24 6 0Xb3 b</h1>
+<p><strong>i2cset -f -y 0 0X24 6 0Xb3 b</strong></p>
 <p>b) Change battery charging voltage to 4.2V</p>
-<h1 id="i2cset-f-y-0-0x24-5-0xa0-b">i2cset -f -y 0 0X24 5 0Xa0 b</h1>
+<p><strong>i2cset -f -y 0 0X24 5 0Xa0 b</strong></p>
 <p><code>NOTE:</code> When board is powered up only by battery then Power switch S3 has to be pressed to turn it on.</p>
 <p>Please refer to image provided below for battery connections</p>
-<p><img alt="bat1" src="./bat1.jpg" /></p>
+<p><img alt="bat1" src="./img\bat1.jpg" /></p>
               
             </div>
           </div>
@@ -162,5 +156,5 @@ Issue the following commands in console :
 
 <!--
 MkDocs version : 0.15.3
-Build Date UTC : 2016-07-19 15:57:58.174670
+Build Date UTC : 2016-07-19 15:59:51.480392
 -->
